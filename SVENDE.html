@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVende | Tu Sucursal Abierta 24/7 en El Salvador</title>
+    <meta name="description" content="Creamos tu tienda en línea con Shopify en El Salvador. Multiplica tus ventas con una sucursal abierta 24/7. Automatiza tu negocio hoy.">
+    
+    <!-- Fuentes: Inter para legibilidad moderna -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome para iconos (mantenemos esto para iconos de redes, etc) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#0F2C59', // Azul corporativo oscuro (sólido y confiable)
+                            lightBlue: '#1A5F7A', // Azul medio
+                            orange: '#F97300', // Naranja vibrante (acción, ventas, conversión)
+                            orangeHover: '#E06500'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Estilos personalizados adicionales */
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #0F2C59, #1A5F7A);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-pattern {
+            background-color: #f8fafc;
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+        .card-plan {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 antialiased bg-slate-50">
+
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo Tipográfico -->
+                <div class="flex-shrink-0 flex items-center cursor-pointer group" onclick="window.scrollTo(0,0)">
+                    <span class="font-extrabold text-3xl tracking-tight text-brand-blue transition-transform duration-300 group-hover:scale-105">S<span class="text-brand-orange">Vende</span></span>
+                </div>
+
+                <!-- Menú Desktop -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#beneficios" class="text-slate-600 hover:text-brand-blue font-medium transition-colors">¿Por qué E-commerce?</a>
+                    <a href="#planes" class="text-slate-600 hover:text-brand-blue font-medium transition-colors">Nuestros Planes</a>
+                    <a href="#servicios" class="text-slate-600 hover:text-brand-blue font-medium transition-colors">Servicios Extra</a>
+                    <a href="#contacto" class="bg-brand-orange hover:bg-brand-orangeHover text-white px-6 py-2.5 rounded-full font-semibold transition-all shadow-lg shadow-orange-500/30 transform hover:-translate-y-0.5">Cotizar Ahora</a>
+                </div>
+
+                <!-- Botón Menú Móvil -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" type="button" class="text-slate-600 hover:text-brand-blue focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 absolute w-full shadow-xl">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="#beneficios" class="mobile-link block px-3 py-3 text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-blue rounded-md">¿Por qué E-commerce?</a>
+                <a href="#planes" class="mobile-link block px-3 py-3 text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-blue rounded-md">Planes</a>
+                <a href="#servicios" class="mobile-link block px-3 py-3 text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-blue rounded-md">Servicios Extra</a>
+                <a href="#contacto" class="mobile-link block w-full text-center mt-4 bg-brand-orange text-white px-3 py-3 rounded-md font-semibold">Cotizar Ahora</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden hero-pattern">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-4xl mx-auto">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 text-brand-blue font-semibold text-sm mb-6 border border-blue-100 shadow-sm">
+                    <span class="relative flex h-3 w-3">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-orange opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-3 w-3 bg-brand-orange"></span>
+                    </span>
+                    Expertos en Shopify en El Salvador
+                </div>
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-8">
+                    Tu nueva sucursal, <br class="hidden md:block" />
+                    <span class="gradient-text">abierta 24/7.</span>
+                </h1>
+                <p class="text-lg md:text-xl text-slate-600 mb-10 leading-relaxed max-w-3xl mx-auto">
+                    Imagina despertar con nuevas ventas generadas mientras dormías. Transformamos tu negocio físico o tus redes sociales en una <strong>máquina de ventas automatizada</strong> y profesional. Vende más, a más personas, sin límites de horario.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#planes" class="bg-brand-orange hover:bg-brand-orangeHover text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-xl shadow-orange-500/20 transform hover:-translate-y-1 flex items-center justify-center gap-2">
+                        Ver Planes <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#beneficios" class="bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 px-8 py-4 rounded-full font-bold text-lg transition-all shadow-sm flex items-center justify-center gap-2">
+                        Descubrir Beneficios
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Elementos decorativos de fondo -->
+        <div class="absolute top-1/2 left-0 w-64 h-64 bg-brand-lightBlue opacity-10 rounded-full blur-3xl transform -translate-y-1/2 -translate-x-1/2"></div>
+        <div class="absolute top-1/4 right-0 w-96 h-96 bg-brand-orange opacity-10 rounded-full blur-3xl transform -translate-y-1/2 translate-x-1/3"></div>
+    </section>
+
+    <section id="beneficios" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-blue mb-4">No es solo una página web. Es tu mejor vendedor.</h2>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">Deja de perder ventas en mensajes de WhatsApp no contestados. Automatiza el proceso y dale a tus clientes la experiencia de compra que esperan de una marca líder.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Beneficio 1 -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300 group">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-store text-2xl text-brand-blue"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Abierto 24 Horas al Día</h3>
+                    <p class="text-slate-600 leading-relaxed">Tu tienda nunca cierra ni se va a dormir. Tus clientes pueden explorar tu catálogo, elegir productos y pagar a las 3:00 AM, generando ingresos automáticos.</p>
+                </div>
+
+                <!-- Beneficio 2 -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300 group">
+                    <div class="w-14 h-14 bg-orange-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-bolt text-2xl text-brand-orange"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Automatización Total</h3>
+                    <p class="text-slate-600 leading-relaxed">Olvídate de calcular precios de envío a mano. La tienda cobra con tarjetas locales de El Salvador y suma los costos de logística por zona automáticamente.</p>
+                </div>
+
+                <!-- Beneficio 3 -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300 group">
+                    <div class="w-14 h-14 bg-sky-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-bullseye text-2xl text-brand-lightBlue"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Motor de Escalamiento</h3>
+                    <p class="text-slate-600 leading-relaxed">Conectamos tu inventario con Meta. Lanza anuncios en Facebook e Instagram que lleven tráfico directo a comprar, sin fricciones ni intermediarios.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="planes" class="py-24 bg-slate-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <svg class="h-full w-full" xmlns="http://www.w3.org/2000/svg">
+                <defs><pattern id="pricing-pattern" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M0 40L40 0H20L0 20M40 40V20L20 40" fill="none" stroke="currentColor" stroke-width="1"/></pattern></defs>
+                <rect width="100%" height="100%" fill="url(#pricing-pattern)"/>
+            </svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">Inversión en tu Crecimiento</h2>
+                <p class="text-xl text-slate-400 max-w-2xl mx-auto">Elige el motor que impulsará tus ventas online. Este es un pago único por el desarrollo, configuración y lanzamiento de tu sucursal digital.</p>
+            </div>
+
+            <!-- Contenedor flex con alineación horizontal pareja -->
+            <div class="flex flex-col md:flex-row gap-8 max-w-5xl mx-auto items-stretch">
+                
+                <!-- Plan Estándar -->
+                <div class="card-plan flex-1 bg-slate-800 rounded-3xl p-8 md:p-10 border border-slate-700 hover:border-brand-lightBlue transition-colors relative">
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-bold text-white mb-2">🚀 Plan Estándar</h3>
+                        <p class="text-slate-400 text-sm mb-6 h-10">Ideal para negocios en crecimiento que quieren entrar al e-commerce con fuerza.</p>
+                        <div class="flex items-baseline text-5xl font-extrabold mb-2">
+                            $495<span class="text-xl font-medium text-slate-400 ml-2">USD</span>
+                        </div>
+                        <p class="text-sm text-slate-400"><i class="fa-regular fa-clock mr-1"></i> Entrega en 2 a 3 semanas</p>
+                    </div>
+
+                    <ul class="space-y-4 mb-8 flex-1">
+                        <li class="flex gap-3 text-slate-300">
+                            <i class="fa-solid fa-check text-brand-lightBlue mt-1"></i>
+                            <span><strong>Diseño adaptado:</strong> Tema gratuito o Premium (licencia por el cliente) con tu identidad visual.</span>
+                        </li>
+                        <li class="flex gap-3 text-slate-300">
+                            <i class="fa-solid fa-check text-brand-lightBlue mt-1"></i>
+                            <span><strong>Catálogo inicial:</strong> Carga de hasta <strong>30 productos</strong> (ampliable por $0.80 c/u).</span>
+                        </li>
+                        <li class="flex gap-3 text-slate-300">
+                            <i class="fa-solid fa-check text-brand-lightBlue mt-1"></i>
+                            <span><strong>Pasarela de Pagos:</strong> Acepta Tarjetas de Crédito/Débito locales + métodos manuales.</span>
+                        </li>
+                        <li class="flex gap-3 text-slate-300">
+                            <i class="fa-solid fa-check text-brand-lightBlue mt-1"></i>
+                            <span><strong>Logística:</strong> Tarifas de envío por zonas/departamentos de El Salvador.</span>
+                        </li>
+                        <li class="flex gap-3 text-slate-300">
+                            <i class="fa-solid fa-check text-brand-lightBlue mt-1"></i>
+                            <span><strong>Marketing:</strong> Sincronización con Meta Ads, botón de WhatsApp y cupones básicos.</span>
+                        </li>
+                        <li class="flex gap-3 text-slate-300">
+                            <i class="fa-solid fa-check text-brand-lightBlue mt-1"></i>
+                            <span><strong>Respaldo:</strong> 1.5 hrs de capacitación + <strong>1 mes de soporte</strong> técnico post-lanzamiento.</span>
+                        </li>
+                    </ul>
+
+                    <a href="#contacto" class="w-full block bg-slate-700 hover:bg-slate-600 text-white font-bold py-4 rounded-xl transition-colors text-center mt-auto">Elegir Estándar</a>
+                </div>
+
+                <!-- Plan Corporativo (Destacado) -->
+                <div class="card-plan flex-1 bg-gradient-to-b from-brand-blue to-slate-900 rounded-3xl p-8 md:p-10 border-2 border-brand-lightBlue shadow-2xl shadow-blue-900/50 relative">
+                    <div class="absolute top-0 right-8 transform -translate-y-1/2">
+                        <span class="bg-brand-orange text-white text-xs font-bold uppercase tracking-wider py-1.5 px-4 rounded-full shadow-lg">El más completo</span>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-bold text-white mb-2">💎 Plan Corporativo</h3>
+                        <p class="text-blue-200 text-sm mb-6 h-10">Solución integral para marcas establecidas con requerimientos y volúmenes avanzados.</p>
+                        <div class="flex items-baseline text-5xl font-extrabold text-white mb-2">
+                            $995<span class="text-xl font-medium text-blue-300 ml-2">USD</span>
+                        </div>
+                        <p class="text-sm text-blue-200"><i class="fa-regular fa-clock mr-1"></i> Entrega en 5 a 8 semanas</p>
+                    </div>
+
+                    <ul class="space-y-4 mb-8 flex-1">
+                        <li class="flex gap-3 text-white">
+                            <i class="fa-solid fa-check-double text-brand-orange mt-1"></i>
+                            <span><strong>Todo lo del Plan Estándar, más:</strong></span>
+                        </li>
+                        <li class="flex gap-3 text-blue-100">
+                            <i class="fa-solid fa-check text-brand-lightBlue mt-1"></i>
+                            <span><strong>Diseño a la medida:</strong> Modificaciones de código para estructuras 100% personalizadas.</span>
+                        </li>
+                        <li class="flex gap-3 text-blue-100">
+                            <i class="fa-solid fa-check text-brand-lightBlue mt-1"></i>
+                            <span><strong>Catálogo ilimitado:</strong> Carga masiva e inventarios complejos (CSV/Excel).</span>
+                        </li>
+                        <li class="flex gap-3 text-blue-100">
+                            <i class="fa-solid fa-check text-brand-lightBlue mt-1"></i>
+                            <span><strong>Reglas Avanzadas:</strong> Descuentos automáticos (Ej. 2x1, envío gratis condicionado).</span>
+                        </li>
+                        <li class="flex gap-3 text-blue-100">
+                            <i class="fa-solid fa-check text-brand-lightBlue mt-1"></i>
+                            <span><strong>Automatización Email:</strong> Recuperación de carritos abandonados y correos de bienvenida.</span>
+                        </li>
+                        <li class="flex gap-3 text-blue-100">
+                            <i class="fa-solid fa-check text-brand-lightBlue mt-1"></i>
+                            <span><strong>Respaldo Premium:</strong> 2 hrs de capacitación + <strong>3 meses de soporte prioritario</strong>.</span>
+                        </li>
+                    </ul>
+
+                    <a href="#contacto" class="w-full block bg-brand-orange hover:bg-brand-orangeHover text-white font-bold py-4 rounded-xl transition-colors text-center shadow-lg mt-auto">Elegir Corporativo</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-20 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-brand-blue mb-4">Servicios Adicionales (A la medida)</h2>
+                <p class="text-slate-600">Personaliza el alcance de tu proyecto agregando módulos según las necesidades de tu negocio.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Servicio 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <i class="fa-solid fa-box-open text-3xl text-brand-blue mb-4"></i>
+                    <h4 class="font-bold text-lg mb-2">Carga de Productos Extra</h4>
+                    <p class="text-sm text-slate-500 mb-4">Si superas los 30 productos del Plan Estándar, nos encargamos de subir el resto de tu catálogo.</p>
+                    <p class="font-bold text-brand-orange">$0.80 USD <span class="text-xs text-slate-400 font-normal">/producto adicional</span></p>
+                </div>
+                
+                <!-- Servicio 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <i class="fa-solid fa-code text-3xl text-brand-blue mb-4"></i>
+                    <h4 class="font-bold text-lg mb-2">Apps a la Medida</h4>
+                    <p class="text-sm text-slate-500 mb-4">Desarrollo e integración de funcionalidades técnicas específicas que tu operación requiera.</p>
+                    <p class="font-bold text-brand-orange">Desde $150 USD</p>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <i class="fa-solid fa-laptop-code text-3xl text-brand-blue mb-4"></i>
+                    <h4 class="font-bold text-lg mb-2">Webmaster Mensual</h4>
+                    <p class="text-sm text-slate-500 mb-4">Delega la gestión operativa: procesamiento de pedidos, inventario, nuevos productos y banners.</p>
+                    <p class="font-bold text-brand-orange">Desde $150 USD <span class="text-xs text-slate-400 font-normal">/mes</span></p>
+                </div>
+
+                <!-- Servicio 4 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <i class="fa-solid fa-bullhorn text-3xl text-brand-blue mb-4"></i>
+                    <h4 class="font-bold text-lg mb-2">Publicidad Meta Ads</h4>
+                    <p class="text-sm text-slate-500 mb-4">Diseño de anuncios y optimización de campañas para llevar tráfico cualificado a la tienda.</p>
+                    <p class="font-bold text-brand-orange">Desde $150 USD <span class="text-xs text-slate-400 font-normal">/mes (+ pauta)</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-blue-50 rounded-3xl p-8 md:p-12 border border-blue-100">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm text-brand-blue flex-shrink-0">
+                        <i class="fa-solid fa-circle-info text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-brand-blue">Transparencia Total: Costos Operativos</h3>
+                </div>
+                <p class="text-slate-600 mb-6 leading-relaxed">
+                    Nuestros planes cubren nuestro trabajo experto en <strong>desarrollo, configuración y lanzamiento</strong> de tu tienda. Para mantener tu sucursal en línea operando de forma 100% independiente, tú como dueño del negocio deberás cubrir los siguientes servicios de infraestructura directamente con los proveedores:
+                </p>
+                
+                <div class="space-y-4">
+                    <details class="group bg-white rounded-xl shadow-sm overflow-hidden" open>
+                        <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 bg-slate-50 hover:bg-slate-100 transition">
+                            Plan de Suscripción a la Plataforma Shopify
+                            <i class="fa-solid fa-chevron-down text-slate-400 group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <div class="p-5 pt-4 text-sm text-slate-600 border-t border-slate-100">
+                            <p class="mb-3">Puedes pagar a Shopify mes a mes, o aprovechar un descuento pagando el año por adelantado. Las opciones principales son:</p>
+                            <ul class="space-y-3 list-disc pl-5">
+                                <li><strong>Plan Basic (Recomendado):</strong> 25 US$/mes con pago mensual, o 19 US$/mes eligiendo el pago anual.</li>
+                                <li><strong>Plan Grow:</strong> 65 US$/mes con pago mensual, o 49 US$/mes eligiendo el pago anual.</li>
+                                <li><strong>Plan Advanced:</strong> 399 US$/mes con pago mensual, o 299 US$/mes eligiendo el pago anual.</li>
+                                <li><strong>Plan Plus (Corporaciones):</strong> Desde 2300 US$/mes.</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="group bg-white rounded-xl shadow-sm overflow-hidden">
+                        <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-slate-800 bg-slate-50 hover:bg-slate-100 transition">
+                            Dominio, Pasarela Local y Complementos
+                            <i class="fa-solid fa-chevron-down text-slate-400 group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <div class="p-5 pt-4 text-sm text-slate-600 border-t border-slate-100">
+                            <ul class="space-y-4">
+                                <li><strong class="text-slate-800 block mb-1">Dominio Web:</strong> Renovación anual del nombre de tu tienda (ej. tumarca.com o .com.sv). Entre $15 y $50 USD al año.</li>
+                                <li><strong class="text-slate-800 block mb-1">Pasarela de Pagos Local:</strong> Desde $35 mensuales, este pago es directo al banco o proveedor financiero de la pasarela de pagos que elijas en El Salvador para procesar las tarjetas.</li>
+                                <li><strong class="text-slate-800 block mb-1">Apps Premium / Temas (Opcional):</strong> Solo si decides comprar una plantilla de diseño premium (pago único) o requieres apps externas que cobren suscripción mensual por funciones extra.</li>
+                            </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-24 bg-brand-blue relative overflow-hidden text-center">
+        <!-- Decoración -->
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+        <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-[800px] h-[800px] bg-brand-lightBlue rounded-full blur-[100px] opacity-20"></div>
+
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-white">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-6">¿Listo para abrir tu sucursal digital?</h2>
+            <p class="text-xl text-blue-200 mb-10 leading-relaxed">No dejes que tu competencia se quede con los clientes que buscan comprar por internet en El Salvador. Agenda una asesoría y empecemos a construir tu tienda hoy.</p>
+            
+            <div class="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-3xl max-w-md mx-auto shadow-2xl">
+                <i class="fa-brands fa-whatsapp text-6xl text-[#25D366] mb-4 drop-shadow-md"></i>
+                <h3 class="text-2xl font-bold mb-2">Escríbenos Directo</h3>
+                <p class="text-blue-100 text-sm mb-6">Hablemos sobre tu negocio y veamos qué plan se adapta a lo que necesitas.</p>
+                <a href="https://wa.me/50377417951?text=Hola%20SVende,%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20planes%20para%20crear%20mi%20tienda%20en%20l%C3%ADnea%20y%20vender%2024/7." target="_blank" class="w-full bg-[#25D366] hover:bg-[#128C7E] text-white font-bold py-4 px-6 rounded-xl transition-all shadow-lg shadow-green-900/50 flex items-center justify-center gap-3 transform hover:scale-105">
+                    <i class="fa-solid fa-comment-dots text-xl"></i> Iniciar Chat en WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center">
+                <!-- Logo Tipográfico Footer -->
+                <span class="font-extrabold text-2xl tracking-tight text-white opacity-90 hover:opacity-100 transition-opacity cursor-pointer" onclick="window.scrollTo(0,0)">S<span class="text-brand-orange">Vende</span></span>
+            </div>
+            <p class="text-sm">© 2026 SVende. Tu sucursal digital abierta 24/7 en El Salvador.</p>
+            <div class="flex gap-5">
+                <a href="javascript:void(0)" class="hover:text-brand-lightBlue transition"><i class="fa-brands fa-facebook text-xl"></i></a>
+                <a href="javascript:void(0)" class="hover:text-brand-lightBlue transition"><i class="fa-brands fa-instagram text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Lógica del menú móvil
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const navbar = document.getElementById('navbar');
+
+        // Abrir/Cerrar menú con el botón
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            menu.classList.toggle('hidden');
+        });
+
+        // Lógica mejorada para scroll y cierre de menú en móviles
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    e.preventDefault(); 
+                    
+                    // Asegurar que el menú se cierre siempre en móviles al hacer clic en un enlace
+                    if (!menu.classList.contains('hidden')) {
+                        menu.classList.add('hidden');
+                    }
+                    
+                    // Cálculo exacto considerando la barra de navegación fija
+                    const headerOffset = 80; 
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Efecto sombra en la barra de navegación al hacer scroll
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                navbar.classList.add('shadow-md');
+                navbar.classList.remove('py-2');
+            } else {
+                navbar.classList.remove('shadow-md');
+                navbar.classList.add('py-2');
+            }
+        });
+    </script>
+</body>
+</html>
